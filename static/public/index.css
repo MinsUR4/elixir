@@ -1,25 +1,1034 @@
-/* Update branding and logo in CSS */
+/* 
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured sans font-family by default.
+5. Use the user's configured sans font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from html so users can set them as a class directly on the html element.
+*/
+
 body {
-  font-family: "Inter", system-ui, sans-serif;
-  background-color: #f9fafb;
-  color: #333;
-  /* Additional body styling */
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
 }
 
-.header-logo {
-  background-image: url("https://lh6.googleusercontent.com/Ti4DdsvULakuyBr9vp1i2m3lgQr2XpqeimcNcd3jz-n1zjOPUifkkp__9psRQz7SShM0H5JUp8qAKUI0hTpm6Mc=w16383");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 200px; /* Set the width as per your layout */
-  height: 60px; /* Set the height as per your layout */
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
 }
 
-.brand-name {
-  font-size: 2rem;
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured mono font family by default.
+2. Correct the odd em font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent sub and sup elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+/*
+1. Add the correct font weight in all browsers.
+2. Prevent the default browser behavior for the placeholder text.
+*/
+
+input,
+button,
+select,
+textarea {
+  font-weight: inherit;
+  /* 1 */
+  -webkit-appearance: none;
+  /* 2 */
+  -moz-appearance: none;
+  /* 2 */
+  appearance: none;
+  /* 2 */
+}
+
+/*
+1. Remove default margin in all browsers.
+2. Reset the border color for input, button, select, and textarea in Chrome and Safari.
+3. Remove the default focus ring outline for inputs and buttons in Chrome and Safari.
+*/
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  /* 1 */
+  border-color: #e5e7eb;
+  /* 2 */
+  outline: none;
+  /* 3 */
+}
+
+/*
+Add the correct box-sizing in Firefox.
+*/
+
+button,
+input {
+  box-sizing: border-box;
+}
+
+/*
+1. Add the correct vertical alignment in all browsers.
+2. Fix the vertical alignment for checkboxes and radio buttons.
+*/
+
+button,
+input {
+  vertical-align: middle;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/*
+Add the correct default appearance for buttons in Firefox and Safari.
+*/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 1 */
+  appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 1 */
+  border-radius: 0;
+  /* 1 */
+  cursor: pointer;
+  /* 1 */
+}
+
+/*
+Remove the gray background color for disabled buttons in Safari.
+*/
+
+button:disabled,
+input:disabled {
+  background-color: transparent;
+}
+
+/*
+Normalize button style for accessibility and usability across all browsers.
+*/
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  padding: 0;
+  appearance: button;
+  box-sizing: border-box;
+}
+
+/*
+Fix the text rendering in Safari.
+*/
+
+button,
+input,
+select,
+textarea {
+  text-rendering: optimize-legibility;
+}
+
+/*
+Ensure buttons respect the user's configured system font size and font weight.
+*/
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+/*
+1. Remove default margin in all browsers.
+2. Prevent the default border-radius for input elements in all browsers.
+*/
+
+fieldset {
+  margin: 0;
+  /* 1 */
+  border-radius: 0;
+  /* 2 */
+}
+
+/*
+Remove the default list style in all browsers.
+*/
+
+ol,
+ul {
+  list-style: none;
+}
+
+/*
+Add the correct display in all browsers.
+*/
+
+ol,
+ul {
+  display: block;
+}
+
+/*
+Ensure that all images in a document have the same border-box model as other elements.
+*/
+
+img {
+  border-style: none;
+}
+
+/*
+Ensure that all elements use the same box model.
+*/
+
+svg {
+  display: block;
+  /* 1 */
+  overflow: hidden;
+  /* 2 */
+}
+
+/*
+Normalize the appearance of the 'progress' element in all browsers.
+*/
+
+progress {
+  appearance: none;
+}
+
+/*
+Ensure that all elements respect the user's system font size and weight.
+*/
+
+textarea {
+  font: inherit;
+  /* 1 */
+}
+
+/*
+Prevent user scaling on input elements in mobile Safari.
+*/
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  appearance: none;
+  -webkit-appearance: none;
+  /* 1 */
+}
+
+/*
+Prevent visual glitches on resize in Firefox.
+*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+}
+
+/*
+Fix the border and background color on form elements in IE and Safari.
+*/
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="color"],
+button {
+  background-color: transparent;
+  /* 1 */
+  border: 1px solid #e5e7eb;
+  /* 2 */
+}
+
+/*
+Prevent jumps in Firefox on form elements.
+*/
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  /* 1 */
+  border: 1px solid #e5e7eb;
+  /* 2 */
+}
+
+/*
+Prevent the default click sound in iOS Safari when the user taps a button.
+*/
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+/*
+Ensure that all the default behaviors for scrollbars and text fields work properly in all browsers.
+*/
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"] {
+  background-color: transparent;
+  /* 1 */
+  border: 1px solid #e5e7eb;
+  /* 2 */
+  padding: 8px 12px;
+  /* 3 */
+}
+/*
+Fix Firefox issue where placeholder text disappears when user inputs text.
+*/
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #9ca3af;
+  /* 1 */
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #9ca3af;
+  /* 3 */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #9ca3af;
+  /* 4 */
+}
+
+/*
+Reset the background color for buttons to transparent.
+*/
+
+button {
+  background-color: transparent;
+  /* 1 */
+  border: 1px solid transparent;
+  /* 2 */
+}
+
+/*
+Ensure that buttons have no default outline in all browsers.
+*/
+
+button:focus {
+  outline: none;
+}
+
+/*
+Ensure the default button style doesn't apply in all browsers.
+*/
+
+button,
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*
+Remove the border-radius from radio and checkbox buttons in all browsers.
+*/
+
+input[type="radio"],
+input[type="checkbox"] {
+  border-radius: 0;
+}
+
+/*
+Ensure that all links are presented consistently in all browsers.
+*/
+
+a {
+  text-decoration: none;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Reset the default list styles and margins for lists and links in all browsers.
+*/
+
+nav,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* 1 */
+}
+
+/*
+Make sure that all elements with text in them align correctly.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* 1 */
+  font-family: system-ui, sans-serif;
+  /* 2 */
+  font-size: 1rem;
+  /* 3 */
+  margin: 0;
+  /* 4 */
+  padding: 0;
+  /* 5 */
+}
+
+/*
+Prevent the default styling of form elements in all browsers.
+*/
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+  line-height: inherit;
+  /* 3 */
+  color: inherit;
+  /* 4 */
+}
+
+/*
+Prevent empty inputs and buttons from having borders.
+*/
+
+input,
+textarea,
+button {
+  border: none;
+  /* 1 */
+}
+
+/*
+Normalize the appearance of various form elements in WebKit browsers.
+*/
+
+input,
+textarea,
+select,
+button {
+  background: transparent;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+/*
+Ensure that form elements are properly aligned and spaced in all browsers.
+*/
+
+input,
+textarea,
+button,
+select {
+  vertical-align: middle;
+  /* 1 */
+}
+
+/*
+Apply consistent padding and font sizes for form elements.
+*/
+
+input[type="text"],
+textarea,
+select {
+  padding: 0.5rem;
+  /* 1 */
+  font-size: 1rem;
+  /* 2 */
+}
+
+/*
+Ensure that form buttons are consistent in height across all browsers.
+*/
+
+button,
+input[type="button"],
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  /* 1 */
+  font-size: 1rem;
+  /* 2 */
+  line-height: 1.5;
+  /* 3 */
+}
+
+/*
+Make sure that form elements are reset for custom styles.
+*/
+
+input,
+textarea,
+button {
+  background-color: transparent;
+  /* 1 */
+  border-radius: 0;
+  /* 2 */
+  border: 1px solid #ccc;
+  /* 3 */
+}
+
+/*
+Normalize the appearance of custom file input fields.
+*/
+
+input[type="file"] {
+  border: none;
+  /* 1 */
+  background: transparent;
+  /* 2 */
+  color: inherit;
+  /* 3 */
+}
+
+/*
+Ensure consistent rendering of number input fields.
+*/
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* 1 */
+  appearance: textfield;
+  /* 2 */
+}
+
+/*
+Remove the number field increment arrows in WebKit browsers.
+*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/*
+Reset the focus outline for form elements.
+*/
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+  /* 1 */
+}
+
+/*
+Ensure that form elements are reset for accessibility.
+*/
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  /* 1 */
+}
+/*
+Ensure all links behave consistently across the website.
+*/
+
+a {
+  text-decoration: none;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  background-color: transparent;
+  /* 3 */
+}
+
+/*
+Prevent links from becoming outlined when clicked in WebKit browsers.
+*/
+
+a:focus {
+  outline: none;
+  /* 1 */
+  box-shadow: none;
+  /* 2 */
+}
+
+/*
+Add focus styles to links for accessibility.
+*/
+
+a:focus {
+  outline: 2px solid #005fcc;
+  /* 1 */
+  outline-offset: 2px;
+  /* 2 */
+}
+
+/*
+Style links to indicate they are interactive.
+*/
+
+a:hover,
+a:active {
+  color: #005fcc;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+}
+
+/*
+Reset unordered list styles.
+*/
+
+ul,
+ol {
+  list-style: none;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Reset blockquote styles.
+*/
+
+blockquote {
+  margin: 0;
+  /* 1 */
+  padding: 0 1rem;
+  /* 2 */
+  border-left: 3px solid #ccc;
+  /* 3 */
+  color: #555;
+  /* 4 */
+}
+
+/*
+Remove default margin and padding from tables.
+*/
+
+table {
+  border-collapse: collapse;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Style table rows and cells for consistency.
+*/
+
+th,
+td {
+  padding: 0.5rem;
+  /* 1 */
+  text-align: left;
+  /* 2 */
+  border-bottom: 1px solid #ccc;
+  /* 3 */
+}
+
+/*
+Ensure table headers are distinct.
+*/
+
+th {
   font-weight: bold;
-  color: #1f2937;
-  text-align: center;
-  text-transform: uppercase;
+  /* 1 */
+  background-color: #f4f4f4;
+  /* 2 */
+}
+/*
+Ensure consistent box-sizing across all elements.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* 1 */
 }
 
-/* Further styles for your branding */
+/*
+Apply consistent styling for form elements.
+*/
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+  border: 1px solid #ccc;
+  /* 3 */
+  padding: 0.5rem;
+  /* 4 */
+  margin: 0;
+  /* 5 */
+  border-radius: 0.25rem;
+  /* 6 */
+}
+
+/*
+Remove default focus outline on form elements for custom styling.
+*/
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  /* 1 */
+  box-shadow: 0 0 0 2px #005fcc;
+  /* 2 */
+}
+
+/*
+Style the appearance of buttons.
+*/
+
+button {
+  cursor: pointer;
+  /* 1 */
+  background-color: #005fcc;
+  /* 2 */
+  color: #fff;
+  /* 3 */
+  border: none;
+  /* 4 */
+  border-radius: 0.25rem;
+  /* 5 */
+  padding: 0.75rem 1.5rem;
+  /* 6 */
+  transition: background-color 0.3s ease;
+  /* 7 */
+}
+
+/*
+Style buttons on hover.
+*/
+
+button:hover {
+  background-color: #004b8d;
+  /* 1 */
+}
+
+/*
+Style buttons when disabled.
+*/
+
+button:disabled {
+  cursor: not-allowed;
+  /* 1 */
+  background-color: #ccc;
+  /* 2 */
+  color: #888;
+  /* 3 */
+}
+
+/*
+Set a base font size for the document for readability.
+*/
+
+html {
+  font-size: 16px;
+  /* 1 */
+}
+
+/*
+Style text elements for legibility and consistency.
+*/
+
+body {
+  font-family: 'Arial', sans-serif;
+  /* 1 */
+  line-height: 1.6;
+  /* 2 */
+  color: #333;
+  /* 3 */
+  background-color: #fafafa;
+  /* 4 */
+  padding: 2rem;
+  /* 5 */
+}
+
+/*
+Style headings for clarity and prominence.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  /* 1 */
+  margin-bottom: 1rem;
+  /* 2 */
+  font-weight: bold;
+  /* 3 */
+}
+
+/*
+Style paragraphs for better spacing.
+*/
+
+p {
+  margin-bottom: 1rem;
+  /* 1 */
+  color: #555;
+  /* 2 */
+}
+
+/*
+Set default styles for code elements.
+*/
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  /* 1 */
+  font-size: 0.9rem;
+  /* 2 */
+  background-color: #f4f4f4;
+  /* 3 */
+  padding: 0.25rem;
+  /* 4 */
+  border-radius: 0.25rem;
+  /* 5 */
+}
+
+/*
+Make the page visually accessible.
+*/
+
+.visually-hidden {
+  position: absolute;
+  /* 1 */
+  width: 1px;
+  /* 2 */
+  height: 1px;
+  /* 3 */
+  margin: -1px;
+  /* 4 */
+  padding: 0;
+  /* 5 */
+  border: 0;
+  /* 6 */
+  clip: rect(0, 0, 0, 0);
+  /* 7 */
+  overflow: hidden;
+  /* 8 */
+}
