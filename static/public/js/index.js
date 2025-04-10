@@ -176,7 +176,7 @@ function getSearchEngineURL() {
 function getAboutBlank() {
     if (localStorage.getItem('aboutBlank') === 'on') {
         var introText = document.getElementById("introText");
-        introText.innerHTML = "<b>Elixir:</b><br>Search the web without censorship or tracking.</a>"
+        introText.innerHTML = "<b>Anom:</b><br>Search the web without censorship or tracking.</a>"
 
         var searchPlaceholder = document.querySelector("input");
         searchPlaceholder.placeholder = "Search here without tracking";
@@ -319,7 +319,7 @@ function setupCloak() {
         changeFavicon(localStorage.getItem('cloakFavicon'));
     }
     if (localStorage.getItem('cloakTitle') == null && localStorage.getItem('cloakFavicon') == null) {
-        document.title = 'Elixir - Blazingly Fast Math Help!';
+        document.title = 'Anom';
         changeFavicon('favicon.ico');
     }
 }

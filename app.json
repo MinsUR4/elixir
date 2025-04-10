@@ -1,7 +1,7 @@
 {
-    "name": "Elixir Proxy",
+    "name": "Anom",
     "description": "Ultraviolet proxy ultiziing Ultraviolet and bare-server",
-    "repository": "https://github.com/whos-evan/elixir",
-    "logo": "https://github.com/whos-evan/elixir/blob/c4fbe8e87fb0567e041db20391da36e1b64b0151/images/favicon.ico",
-    "keywords": ["node", "elixir", "ultraviolet", "bare-server"]
+    "repository": "",
+    "logo": "https://pbs.twimg.com/profile_images/1182737510419566592/QwNlO5-P_400x400.jpg",
+    "keywords": ["node", "anom", "ultraviolet", "bare-server"]
   }

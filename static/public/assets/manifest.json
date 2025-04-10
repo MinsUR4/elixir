@@ -1,6 +1,6 @@
 {
-"name": "Elixir",
-"short_name": "Elixir - Instant Math Help",
+"name": "Anom",
+"short_name": "Anom",
 "start_url": "/",
 "scope": "/",
 "display": "standalone",
@@ -12,19 +12,19 @@
 "orientation": "any",
 "icons": [
     {
-        "src": "https://elixirofficial.com/assets/icons/manifest-icon-192.maskable.png",
+        "src": "https://pbs.twimg.com/profile_images/1182737510419566592/QwNlO5-P_400x400.jpg",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "maskable"
     },
     {
-        "src": "https://elixirofficial.com/assets/icons/manifest-icon-512.maskable.png",
+        "src": "https://pbs.twimg.com/profile_images/1182737510419566592/QwNlO5-P_400x400.jpg",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "maskable"
     },
     {
-        "src": "https://elixirofficial.com/assets/icons/apple-icon-180.png",
+        "src": "https://pbs.twimg.com/profile_images/1182737510419566592/QwNlO5-P_400x400.jpg",
         "sizes": "180x180",
         "type": "image/png",
         "purpose": "any"
@@ -32,7 +32,7 @@
 ],
 "screenshots": [
     {
-        "src": "https://elixirofficial.com/assets/screenshots/screenshot.png",
+        "src": "https://pbs.twimg.com/profile_images/1182737510419566592/QwNlO5-P_400x400.jpg",
         "sizes": "1920x983",
         "type": "image/png",
         "description": "A screenshot of the home page"
