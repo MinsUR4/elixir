@@ -1,4 +1,4 @@
-var cacheName = 'elixir';
+var cacheName = 'anom';
 var filesToCache = [
   '/js/sw.js'
 ];
