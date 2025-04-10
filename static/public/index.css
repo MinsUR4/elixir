@@ -174,861 +174,860 @@ table {
   border-collapse: collapse;
   /* 3 */
 }
+
 /*
-1. Add the correct font weight in all browsers.
-2. Prevent the default browser behavior for the placeholder text.
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
 */
 
-input,
 button,
+input,
+optgroup,
 select,
 textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
   font-weight: inherit;
   /* 1 */
-  -webkit-appearance: none;
-  /* 2 */
-  -moz-appearance: none;
-  /* 2 */
-  appearance: none;
-  /* 2 */
-}
-
-/*
-1. Remove default margin in all browsers.
-2. Reset the border color for input, button, select, and textarea in Chrome and Safari.
-3. Remove the default focus ring outline for inputs and buttons in Chrome and Safari.
-*/
-
-input,
-button,
-select,
-textarea {
-  margin: 0;
+  line-height: inherit;
   /* 1 */
-  border-color: #e5e7eb;
+  color: inherit;
+  /* 1 */
+  margin: 0;
   /* 2 */
-  outline: none;
+  padding: 0;
   /* 3 */
 }
 
 /*
-Add the correct box-sizing in Firefox.
+Remove the inheritance of text transform in Edge and Firefox.
 */
 
 button,
-input {
-  box-sizing: border-box;
+select {
+  text-transform: none;
 }
 
 /*
-1. Add the correct vertical alignment in all browsers.
-2. Fix the vertical alignment for checkboxes and radio buttons.
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
 */
 
 button,
-input {
-  vertical-align: middle;
-  /* 1 */
-  -webkit-appearance: button;
-  /* 2 */
-}
-
-/*
-Add the correct default appearance for buttons in Firefox and Safari.
-*/
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
-  appearance: button;
-  /* 1 */
   background-color: transparent;
-  /* 1 */
-  border-radius: 0;
-  /* 1 */
-  cursor: pointer;
-  /* 1 */
-}
-
-/*
-Remove the gray background color for disabled buttons in Safari.
-*/
-
-button:disabled,
-input:disabled {
-  background-color: transparent;
-}
-
-/*
-Normalize button style for accessibility and usability across all browsers.
-*/
-
-button {
-  background-color: transparent;
-  border-color: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: inherit;
-  text-align: inherit;
-  cursor: pointer;
-  padding: 0;
-  appearance: button;
-  box-sizing: border-box;
-}
-
-/*
-Fix the text rendering in Safari.
-*/
-
-button,
-input,
-select,
-textarea {
-  text-rendering: optimize-legibility;
-}
-
-/*
-Ensure buttons respect the user's configured system font size and font weight.
-*/
-
-button {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-}
-/*
-1. Remove default margin in all browsers.
-2. Prevent the default border-radius for input elements in all browsers.
-*/
-
-fieldset {
-  margin: 0;
-  /* 1 */
-  border-radius: 0;
+  /* 2 */
+  background-image: none;
   /* 2 */
 }
 
 /*
-Remove the default list style in all browsers.
+Use the modern Firefox focus style for all focusable elements.
 */
 
-ol,
-ul {
-  list-style: none;
+:-moz-focusring {
+  outline: auto;
 }
 
 /*
-Add the correct display in all browsers.
+Remove the additional :invalid styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
 
-ol,
-ul {
-  display: block;
+:-moz-ui-invalid {
+  box-shadow: none;
 }
 
 /*
-Ensure that all images in a document have the same border-box model as other elements.
-*/
-
-img {
-  border-style: none;
-}
-
-/*
-Ensure that all elements use the same box model.
-*/
-
-svg {
-  display: block;
-  /* 1 */
-  overflow: hidden;
-  /* 2 */
-}
-
-/*
-Normalize the appearance of the 'progress' element in all browsers.
+Add the correct vertical alignment in Chrome and Firefox.
 */
 
 progress {
-  appearance: none;
+  vertical-align: baseline;
 }
 
 /*
-Ensure that all elements respect the user's system font size and weight.
+Correct the cursor style of increment and decrement buttons in Safari.
 */
 
-textarea {
-  font: inherit;
-  /* 1 */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
 }
 
 /*
-Prevent user scaling on input elements in mobile Safari.
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
 */
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  appearance: none;
-  -webkit-appearance: none;
-  /* 1 */
-}
-
-/*
-Prevent visual glitches on resize in Firefox.
-*/
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-input[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
-}
-
-/*
-Fix the border and background color on form elements in IE and Safari.
-*/
-
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="tel"],
-input[type="url"],
-input[type="search"],
-input[type="color"],
-button {
-  background-color: transparent;
-  /* 1 */
-  border: 1px solid #e5e7eb;
+  outline-offset: -2px;
   /* 2 */
 }
 
 /*
-Prevent jumps in Firefox on form elements.
+Remove the inner padding in Chrome and Safari on macOS.
 */
 
-input,
-select,
-textarea {
-  background-color: transparent;
-  /* 1 */
-  border: 1px solid #e5e7eb;
-  /* 2 */
-}
-
-/*
-Prevent the default click sound in iOS Safari when the user taps a button.
-*/
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
-  outline: none;
-}
-
-/*
-Ensure that all the default behaviors for scrollbars and text fields work properly in all browsers.
-*/
-
-textarea,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="number"],
-input[type="date"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="time"] {
-  background-color: transparent;
-  /* 1 */
-  border: 1px solid #e5e7eb;
-  /* 2 */
-  padding: 8px 12px;
-  /* 3 */
-}
-/*
-Fix Firefox issue where placeholder text disappears when user inputs text.
-*/
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #9ca3af;
-  /* 1 */
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #9ca3af;
-  /* 2 */
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #9ca3af;
-  /* 3 */
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #9ca3af;
-  /* 4 */
-}
-
-/*
-Reset the background color for buttons to transparent.
-*/
-
-button {
-  background-color: transparent;
-  /* 1 */
-  border: 1px solid transparent;
-  /* 2 */
-}
-
-/*
-Ensure that buttons have no default outline in all browsers.
-*/
-
-button:focus {
-  outline: none;
-}
-
-/*
-Ensure the default button style doesn't apply in all browsers.
-*/
-
-button,
-input[type="button"],
-input[type="submit"] {
+::-webkit-search-decoration {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 /*
-Remove the border-radius from radio and checkbox buttons in all browsers.
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to inherit in Safari.
 */
 
-input[type="radio"],
-input[type="checkbox"] {
-  border-radius: 0;
-}
-
-/*
-Ensure that all links are presented consistently in all browsers.
-*/
-
-a {
-  text-decoration: none;
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
   /* 1 */
-  color: inherit;
+  font: inherit;
   /* 2 */
 }
 
 /*
-Reset the default list styles and margins for lists and links in all browsers.
+Add the correct display in Chrome and Safari.
 */
 
-nav,
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* 1 */
+summary {
+  display: list-item;
 }
 
 /*
-Make sure that all elements with text in them align correctly.
+Removes the default spacing and border for appropriate elements.
 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  /* 1 */
-  font-family: system-ui, sans-serif;
-  /* 2 */
-  font-size: 1rem;
-  /* 3 */
-  margin: 0;
-  /* 4 */
-  padding: 0;
-  /* 5 */
-}
-
-/*
-Prevent the default styling of form elements in all browsers.
-*/
-
-input,
-textarea,
-button,
-select {
-  font-family: inherit;
-  /* 1 */
-  font-size: inherit;
-  /* 2 */
-  line-height: inherit;
-  /* 3 */
-  color: inherit;
-  /* 4 */
-}
-
-/*
-Prevent empty inputs and buttons from having borders.
-*/
-
-input,
-textarea,
-button {
-  border: none;
-  /* 1 */
-}
-
-/*
-Normalize the appearance of various form elements in WebKit browsers.
-*/
-
-input,
-textarea,
-select,
-button {
-  background: transparent;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-}
-/*
-Ensure that form elements are properly aligned and spaced in all browsers.
-*/
-
-input,
-textarea,
-button,
-select {
-  vertical-align: middle;
-  /* 1 */
-}
-
-/*
-Apply consistent padding and font sizes for form elements.
-*/
-
-input[type="text"],
-textarea,
-select {
-  padding: 0.5rem;
-  /* 1 */
-  font-size: 1rem;
-  /* 2 */
-}
-
-/*
-Ensure that form buttons are consistent in height across all browsers.
-*/
-
-button,
-input[type="button"],
-input[type="submit"] {
-  padding: 0.5rem 1rem;
-  /* 1 */
-  font-size: 1rem;
-  /* 2 */
-  line-height: 1.5;
-  /* 3 */
-}
-
-/*
-Make sure that form elements are reset for custom styles.
-*/
-
-input,
-textarea,
-button {
-  background-color: transparent;
-  /* 1 */
-  border-radius: 0;
-  /* 2 */
-  border: 1px solid #ccc;
-  /* 3 */
-}
-
-/*
-Normalize the appearance of custom file input fields.
-*/
-
-input[type="file"] {
-  border: none;
-  /* 1 */
-  background: transparent;
-  /* 2 */
-  color: inherit;
-  /* 3 */
-}
-
-/*
-Ensure consistent rendering of number input fields.
-*/
-
-input[type="number"] {
-  -moz-appearance: textfield;
-  /* 1 */
-  appearance: textfield;
-  /* 2 */
-}
-
-/*
-Remove the number field increment arrows in WebKit browsers.
-*/
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/*
-Reset the focus outline for form elements.
-*/
-
-input:focus,
-textarea:focus,
-select:focus,
-button:focus {
-  outline: none;
-  /* 1 */
-}
-
-/*
-Ensure that form elements are reset for accessibility.
-*/
-
-input[type="text"]:focus,
-textarea:focus,
-select:focus,
-button:focus {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
-  /* 1 */
-}
-/*
-Ensure all links behave consistently across the website.
-*/
-
-a {
-  text-decoration: none;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  background-color: transparent;
-  /* 3 */
-}
-
-/*
-Prevent links from becoming outlined when clicked in WebKit browsers.
-*/
-
-a:focus {
-  outline: none;
-  /* 1 */
-  box-shadow: none;
-  /* 2 */
-}
-
-/*
-Add focus styles to links for accessibility.
-*/
-
-a:focus {
-  outline: 2px solid #005fcc;
-  /* 1 */
-  outline-offset: 2px;
-  /* 2 */
-}
-
-/*
-Style links to indicate they are interactive.
-*/
-
-a:hover,
-a:active {
-  color: #005fcc;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-}
-
-/*
-Reset unordered list styles.
-*/
-
-ul,
-ol {
-  list-style: none;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  padding: 0;
-  /* 3 */
-}
-
-/*
-Reset blockquote styles.
-*/
-
-blockquote {
-  margin: 0;
-  /* 1 */
-  padding: 0 1rem;
-  /* 2 */
-  border-left: 3px solid #ccc;
-  /* 3 */
-  color: #555;
-  /* 4 */
-}
-
-/*
-Remove default margin and padding from tables.
-*/
-
-table {
-  border-collapse: collapse;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  padding: 0;
-  /* 3 */
-}
-
-/*
-Style table rows and cells for consistency.
-*/
-
-th,
-td {
-  padding: 0.5rem;
-  /* 1 */
-  text-align: left;
-  /* 2 */
-  border-bottom: 1px solid #ccc;
-  /* 3 */
-}
-
-/*
-Ensure table headers are distinct.
-*/
-
-th {
-  font-weight: bold;
-  /* 1 */
-  background-color: #f4f4f4;
-  /* 2 */
-}
-/*
-Ensure consistent box-sizing across all elements.
-*/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  /* 1 */
-}
-
-/*
-Apply consistent styling for form elements.
-*/
-
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-  /* 1 */
-  font-size: inherit;
-  /* 2 */
-  border: 1px solid #ccc;
-  /* 3 */
-  padding: 0.5rem;
-  /* 4 */
-  margin: 0;
-  /* 5 */
-  border-radius: 0.25rem;
-  /* 6 */
-}
-
-/*
-Remove default focus outline on form elements for custom styling.
-*/
-
-input:focus,
-button:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  /* 1 */
-  box-shadow: 0 0 0 2px #005fcc;
-  /* 2 */
-}
-
-/*
-Style the appearance of buttons.
-*/
-
-button {
-  cursor: pointer;
-  /* 1 */
-  background-color: #005fcc;
-  /* 2 */
-  color: #fff;
-  /* 3 */
-  border: none;
-  /* 4 */
-  border-radius: 0.25rem;
-  /* 5 */
-  padding: 0.75rem 1.5rem;
-  /* 6 */
-  transition: background-color 0.3s ease;
-  /* 7 */
-}
-
-/*
-Style buttons on hover.
-*/
-
-button:hover {
-  background-color: #004b8d;
-  /* 1 */
-}
-
-/*
-Style buttons when disabled.
-*/
-
-button:disabled {
-  cursor: not-allowed;
-  /* 1 */
-  background-color: #ccc;
-  /* 2 */
-  color: #888;
-  /* 3 */
-}
-
-/*
-Set a base font size for the document for readability.
-*/
-
-html {
-  font-size: 16px;
-  /* 1 */
-}
-
-/*
-Style text elements for legibility and consistency.
-*/
-
-body {
-  font-family: 'Arial', sans-serif;
-  /* 1 */
-  line-height: 1.6;
-  /* 2 */
-  color: #333;
-  /* 3 */
-  background-color: #fafafa;
-  /* 4 */
-  padding: 2rem;
-  /* 5 */
-}
-
-/*
-Style headings for clarity and prominence.
-*/
-
+blockquote,
+dl,
+dd,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  margin-top: 0;
-  /* 1 */
-  margin-bottom: 1rem;
-  /* 2 */
-  font-weight: bold;
-  /* 3 */
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
 }
 
-/*
-Style paragraphs for better spacing.
-*/
-
-p {
-  margin-bottom: 1rem;
-  /* 1 */
-  color: #555;
-  /* 2 */
-}
-
-/*
-Set default styles for code elements.
-*/
-
-code {
-  font-family: 'Courier New', Courier, monospace;
-  /* 1 */
-  font-size: 0.9rem;
-  /* 2 */
-  background-color: #f4f4f4;
-  /* 3 */
-  padding: 0.25rem;
-  /* 4 */
-  border-radius: 0.25rem;
-  /* 5 */
-}
-
-/*
-Make the page visually accessible.
-*/
-
-.visually-hidden {
-  position: absolute;
-  /* 1 */
-  width: 1px;
-  /* 2 */
-  height: 1px;
-  /* 3 */
-  margin: -1px;
-  /* 4 */
+fieldset {
+  margin: 0;
   padding: 0;
-  /* 5 */
-  border: 0;
-  /* 6 */
-  clip: rect(0, 0, 0, 0);
-  /* 7 */
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements display: block by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add vertical-align: middle to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.sidebar-icon {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  fill: #fff;
+  padding: 10px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.sidebar-icon:hover {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.sidebar-tooltip {
+  position: absolute;
+  left: 3.5rem;
+  margin: 0.5rem;
+  width: auto;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  transform-origin: left;
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
+}
+
+.sidebar-icon-selected {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+  fill: #fff;
+  padding: 10px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.sidebar-hr {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.input-bar {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.input-bar:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.input-bar:hover::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.input-bar:hover::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
-  /* 8 */
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.float-right {
+  float: right;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.-mx-1\.5 {
+  margin-left: -0.375rem;
+  margin-right: -0.375rem;
+}
+
+.-my-1\.5 {
+  margin-top: -0.375rem;
+  margin-bottom: -0.375rem;
+}
+
+.-mx-1 {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+
+.-my-1 {
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-\[12rem\] {
+  margin-left: 12rem;
+}
+
+.mr-\[8rem\] {
+  margin-right: 8rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-\[83\.53\%\] {
+  width: 83.53%;
+}
+
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-orange-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 44 76 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 97 53 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-1\.5 {
+  padding: 0.375rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.font-Inter {
+  font-family: Inter, sans-serif;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[1\.75rem\] {
+  font-size: 1.75rem;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 44 76 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-gray-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+}
+
+.group:hover .group-hover\:scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
